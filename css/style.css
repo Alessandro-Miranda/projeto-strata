@@ -1,0 +1,15 @@
+/*Configure the box-sizing of the page to border box*/
+html
+{
+    box-sizing: border-box;
+}
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+/*positioning of the main header and footer. Align the two elements at left*/
+.cabecalho
+{
+    width: 40%;
+}
