@@ -7,9 +7,32 @@ html
 {
     box-sizing: inherit;
 }
-
+body
+{
+    width: 100%;
+}
 /*positioning of the main header and footer. Align the two elements at left*/
+.esquerda
+{
+    width:35%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+}
 .cabecalho
 {
-    width: 40%;
+    margin-top: 195px;
+}
+.rodape
+{
+    margin-top: 518px;
+}
+/*positioning main content at right*/
+main
+{
+    overflow: hidden;
+    margin: 0;
+    width: 65%;
+    position: relative;
+    left: 35%;
 }
