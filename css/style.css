@@ -24,7 +24,7 @@ html
 }
 .rodape
 {
-    margin-top: 500px;
+    margin-top: 450px;
 }
 /*helps in darkening the header background*/
 .escurecimento-bg
@@ -44,6 +44,8 @@ html
     border-radius: 7px;
     padding: 14px 45px;
     background: transparent;
+    transition: color .5s, border .5s;
+    transition-timing-function: cubic-bezier(.32,.65,.69,.82);
 }
 /*header image alignment and format, h1 and other things relateds to header*/
 .cabecalho img
@@ -70,15 +72,18 @@ html
 #link-cab
 {
     color: #DBDBDB;
-    border-bottom: 2px dotted #DBDBDB;
+    border-bottom: 1px dotted #DBDBDB;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color .5s, border .5s;
+    transition-timing-function: cubic-bezier(.32,.65,.69,.82);
 }
 /*align and position footer content*/
 .rodape
 {
     font-size: 14px;
     color: #797979;
+    padding-left: 30px;
 }
 .rodape p
 {
@@ -94,6 +99,26 @@ html
     text-decoration: none;
     border-bottom: 1px dotted #5B5B5B;
     color: #797979;
+    transition: color .5s;
+    transition-timing-function: cubic-bezier(.32,.65,.69,.82);
+}
+.rodape ul
+{
+    margin-bottom: 20px;
+}
+.rodape ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+.rodape ul li:nth-child(1)
+{
+    margin-left: 190px;
+}
+.rodape ul li a
+{
+    text-decoration: none;
+    border: none;
 }
 /*positioning main content at right*/
 main
@@ -198,6 +223,8 @@ main
     border: none;
     border-radius: 4px;
     margin: 0px 20px 20px 0px;
+    transition: border .1s;
+    transition-timing-function: cubic-bezier(.32,.65,.69,.82);
 }
 #touch fieldset
 {
@@ -227,4 +254,36 @@ main
     color: #9C9C9C;
     border-bottom: 2px dotted #9C9C9C;
     text-decoration: none;
+    transition: color .5s, border .5s;
+    transition-timing-function: cubic-bezier(.32,.65,.69,.82);
+}
+#touch i
+{
+    margin-right: 10px;
+}
+/*effects of visual elements*/
+#link-cab:hover
+{
+    color: #50c878;
+    border-bottom: 0px solid transparent;
+}
+.rodape a:hover
+{
+    color: #50c878;
+}
+.link-botoes:hover
+{
+    color: #50c878;
+    border: 2.5px solid #50c878;
+}
+#touch address a:hover
+{
+    color:  #50c878;
+    border-bottom: 0.1px solid transparent;
+}
+#touch input:focus, #touch textarea:focus
+{
+    border: 1.5px solid green;
+    outline:  none;
+    border-radius: 4px;
 }
