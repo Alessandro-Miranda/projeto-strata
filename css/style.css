@@ -189,6 +189,7 @@ main
 .container-img-recent-work > figure
 {
     display: inline-block;
+    position: relative;
 }
 .container-img-recent-work > figure:nth-child(odd)
 {
@@ -199,6 +200,33 @@ main
     width: 347px;
     height: 200px;
     border-radius: 5px;
+    position: relative;
+}
+.capa
+{
+    display: none;
+    position:  absolute;
+    top: 0;
+    padding-top: 90px;
+    width: 347px;
+    height: 200px;
+    background: transparent;
+    font-size: 14px;
+    background: rgba(0,0,0,.29);
+}
+.capa a
+{
+    font-family: 'Lato';
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid #C1C1C1;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+.container-img-recent-work figure:hover .capa
+{
+    display: block;
+    text-align: center;
 }
 /*get in touch section design*/
 /*The <h1> configuration is together recent work section*/
